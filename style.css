@@ -1,0 +1,17 @@
+.favorable{
+    background-color: #28A745;
+    color:white;
+    padding: 8px;
+}
+
+.moderate{
+    background-color: #FFC108;
+    color:white;
+    padding: 8px;
+}
+
+.severe{
+    background-color: #DC3545;
+    color:white;
+    padding: 8px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ed's Weather Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://kit.fontawesome.com/326ee3d75f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body>
+        <nav class="text-center text-white bg-dark p-2">
+            <h1>Ed's Weather Dashboard</h1>
+        </nav>
+
+    <div class = "container-fluid">
+        <div class="row">
+            <div id = "search-bar" class="col-lg-3">
+                <form class="form-inline">
+                    <div class="form-group mb-2">
+                      <label for="staticEmail2" class="sr-only"></label>
+                      <h4>Enter a city:</h4>
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                      <label for="inputPassword2" class="sr-only"></label>
+                      <input id="city-input" class="form-control" placeholder="City name">
+                    </div>
+                    <button type="submit" id="search-city-button" class="btn btn-primary mb-2"><i class="fas fa-search"></i></button>
+                </form>
+
+                <div id = "search-history" class="btn-group-vertical"></div>
+            </div>
+            
+            <div class="col-lg-9">
+                <div class="jumbotron">
+                    <div>
+                        <div class="city"></div>
+                        <div class="temperature"></div>
+                        <div class="humidity"></div>
+                        <div class="wind-speed"></div>
+                        <div class="uv-index"></div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Next 5 Days</h3>
+                    <div id="forecast" class="card-deck"></div>
+ 
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+</html>
